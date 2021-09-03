@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/schoolPro/static/css/main.df4daa76.chunk.css",
+    "main.js": "/schoolPro/static/js/main.19787bfa.chunk.js",
+    "main.js.map": "/schoolPro/static/js/main.19787bfa.chunk.js.map",
+    "runtime-main.js": "/schoolPro/static/js/runtime-main.1654f8a3.js",
+    "runtime-main.js.map": "/schoolPro/static/js/runtime-main.1654f8a3.js.map",
+    "static/css/2.818011ed.chunk.css": "/schoolPro/static/css/2.818011ed.chunk.css",
+    "static/js/2.08005aaf.chunk.js": "/schoolPro/static/js/2.08005aaf.chunk.js",
+    "static/js/2.08005aaf.chunk.js.map": "/schoolPro/static/js/2.08005aaf.chunk.js.map",
+    "index.html": "/schoolPro/index.html",
+    "static/css/2.818011ed.chunk.css.map": "/schoolPro/static/css/2.818011ed.chunk.css.map",
+    "static/css/main.df4daa76.chunk.css.map": "/schoolPro/static/css/main.df4daa76.chunk.css.map",
+    "static/js/2.08005aaf.chunk.js.LICENSE.txt": "/schoolPro/static/js/2.08005aaf.chunk.js.LICENSE.txt",
+    "static/media/banner.28b44ead.png": "/schoolPro/static/media/banner.28b44ead.png",
+    "static/media/banner4.ef52519b.jpg": "/schoolPro/static/media/banner4.ef52519b.jpg",
+    "static/media/banner5.8d472284.png": "/schoolPro/static/media/banner5.8d472284.png",
+    "static/media/profile.d2fa9747.jpg": "/schoolPro/static/media/profile.d2fa9747.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1654f8a3.js",
+    "static/css/2.818011ed.chunk.css",
+    "static/js/2.08005aaf.chunk.js",
+    "static/css/main.df4daa76.chunk.css",
+    "static/js/main.19787bfa.chunk.js"
+  ]
+}
