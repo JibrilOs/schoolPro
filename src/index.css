@@ -1,13 +1,29 @@
+:root {
+
+--primary-color: #1c02b0b2;
+--secondary-color: #0093cde5;
+--white-color: #fff;
+--dark-grey: #333333;
+
+--dark-blue-text: #272341; 
+
+ /* FONT SIZE */
+--default-font-size: 1.6rem;
+--big-font-size: 4rem;
+--mid-font-size: 2.5rem;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+   user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */;
+  box-sizing: border-box;
+     user-select: none;
+ 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}

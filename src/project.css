@@ -1,0 +1,37 @@
+:root {
+
+--primary-color: #1c02b0b2;
+--secondary-color: #0093cde5;
+--white-color: #fff;
+--dark-grey: #333333;
+
+--dark-blue-text: #272341; 
+
+ /* FONT SIZE */
+--default-font-size: 1.6rem;
+--big-font-size: 4rem;
+--mid-font-size: 2.5rem;
+}
+
+#projects {
+  background-color: white;
+  color: (--dark-blue-text);
+  margin-top: 4rem;
+ }
+
+
+  .project-title{
+      color:(--dark-blue-text); 
+  margin-bottom: 4.5rem;
+  font-size: var(--big-font-size);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  }
+   .project-wrapper {
+margin-bottom: 15rem;
+
+
+   }
+   .mb{   margin-bottom: 8rem;
+text-align: justify;}

@@ -1,0 +1,41 @@
+ :root {
+
+--primary-color: #1c02b0b2;
+--secondary-color: #0093cde5;
+--white-color: #fff;
+--dark-grey: #333333;
+
+--dark-blue-text: #272341; 
+
+ /* FONT SIZE */
+--default-font-size: 1.6rem;
+--big-font-size: 4rem;
+--mid-font-size: 2.5rem;
+}
+#contact {
+  background-image: linear-gradient(
+    135deg,
+    var(--primary-color) 0%,
+    var(--secondary-color) 100%
+  );
+  -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+  padding: 15rem 0 10rem 0;
+  margin-top: -10rem;
+  margin-bottom: -1px;
+  color: black;}
+  #title{
+color:white;
+text-align: center;
+ font-size: 2.4rem;
+  }
+  @media only screen and (max-width: 1069px) {
+#contact {
+  
+   font-size: 1.6rem;
+   clip-path: none
+   
+  }
+ 
+  
+}

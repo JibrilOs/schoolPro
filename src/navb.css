@@ -1,0 +1,35 @@
+ :root {
+
+--primary-color: #1c02b0b2;
+--secondary-color: #0093cde5;
+--white-color: #fff;
+--dark-grey: #333333;
+
+--dark-blue-text: #272341; 
+
+ /* FONT SIZE */
+--default-font-size: 1.6rem;
+--big-font-size: 4rem;
+--mid-font-size: 2.5rem;
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* background-color: #1168a1; */
+    width: 99%;
+
+    font-size: 1.5rem;
+
+}
+@media only screen and (max-width: 770px) {
+#wrapper {
+ 
+     display: flex;
+    flex-direction: column;
+   font-size: 1.6rem;
+   
+
+   
+  }} 

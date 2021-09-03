@@ -1,0 +1,56 @@
+:root {
+
+--primary-color: #1c02b0b2;
+--secondary-color: #0093cde5;
+--white-color: #fff;
+--dark-grey: #333333;
+
+--dark-blue-text: #272341; 
+
+ /* FONT SIZE */
+--default-font-size: 1.6rem;
+--big-font-size: 4rem;
+--mid-font-size: 2.5rem;
+}
+
+#hero {
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  border-bottom: 0px;
+  background: white;
+  font-weight: 400;
+  color: var(--dark-blue-text);
+  padding: 0rem 5.6rem;
+  margin-bottom: 0;
+ 
+
+ 
+    padding: 0rem var(--default-font-size);
+  }
+
+  .hero-title {
+    font-size: 2.1rem;
+    font-weight: 700;
+    margin-bottom: 3.2rem;
+    text-align: left;
+
+    }
+   .dark-blue-text {
+  color: var(--dark-blue-text);
+}
+
+.text-color-main {
+  background-image: linear-gradient(
+    135deg, var(--primary-color) 0% ,var(--secondary-color) 100%
+  );
+background-clip: text;
+color: transparent;
+  
+
+}
+
+
+
+ 
