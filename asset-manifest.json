@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/schoolPro/static/css/main.4f7468b8.chunk.css",
-    "main.js": "/schoolPro/static/js/main.9954cc13.chunk.js",
-    "main.js.map": "/schoolPro/static/js/main.9954cc13.chunk.js.map",
+    "main.css": "/schoolPro/static/css/main.e64e994f.chunk.css",
+    "main.js": "/schoolPro/static/js/main.1af71e1a.chunk.js",
+    "main.js.map": "/schoolPro/static/js/main.1af71e1a.chunk.js.map",
     "runtime-main.js": "/schoolPro/static/js/runtime-main.1654f8a3.js",
     "runtime-main.js.map": "/schoolPro/static/js/runtime-main.1654f8a3.js.map",
     "static/css/2.818011ed.chunk.css": "/schoolPro/static/css/2.818011ed.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.b4603192.chunk.js.map": "/schoolPro/static/js/2.b4603192.chunk.js.map",
     "index.html": "/schoolPro/index.html",
     "static/css/2.818011ed.chunk.css.map": "/schoolPro/static/css/2.818011ed.chunk.css.map",
-    "static/css/main.4f7468b8.chunk.css.map": "/schoolPro/static/css/main.4f7468b8.chunk.css.map",
+    "static/css/main.e64e994f.chunk.css.map": "/schoolPro/static/css/main.e64e994f.chunk.css.map",
     "static/js/2.b4603192.chunk.js.LICENSE.txt": "/schoolPro/static/js/2.b4603192.chunk.js.LICENSE.txt",
     "static/media/banner.28b44ead.png": "/schoolPro/static/media/banner.28b44ead.png",
     "static/media/banner4.ef52519b.jpg": "/schoolPro/static/media/banner4.ef52519b.jpg",
@@ -21,7 +21,7 @@
     "static/js/runtime-main.1654f8a3.js",
     "static/css/2.818011ed.chunk.css",
     "static/js/2.b4603192.chunk.js",
-    "static/css/main.4f7468b8.chunk.css",
-    "static/js/main.9954cc13.chunk.js"
+    "static/css/main.e64e994f.chunk.css",
+    "static/js/main.1af71e1a.chunk.js"
   ]
 }
