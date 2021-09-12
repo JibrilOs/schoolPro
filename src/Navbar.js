@@ -1,4 +1,13 @@
 import React, { useState } from "react";
+
+import { Parallax } from "react-parallax";
+import Homepage from "./Homepage";
+import About from "./About";
+import Project from "./Project";
+import Contact from "./Contact";
+import Footer from "./Footer";
+
+import scrollToComponent from "react-scroll-to-component";
 import {
   Collapse,
   Navbar,
@@ -12,6 +21,19 @@ import {
 import "./navb.css";
 
 const Navb = (props) => {
+  const styles = {
+    fontFamily: "sans-serif",
+    textAlign: "center",
+  };
+  const insideStyles = {
+    padding: 20,
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%,-50%)",
+    // height: auto,
+    width: 1300,
+  };
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -19,17 +41,17 @@ const Navb = (props) => {
   return (
     <Container fluid>
       <Navbar color="dark" dark expand="md" className="fixed-top">
-        <NavbarBrand href="/" className=" navbar-brand mb-0 h1 px-2">
+        <NavbarBrand href="/" className=" navbar-brand mb-0 h1 px-2 logo1">
           JOSDEV
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav navbar id="wrapper">
             <NavItem>
-              <NavLink href="/components/">Home</NavLink>
+              <NavLink href="/#">Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/#">Projects</NavLink>
+              <NavLink href="/ABOUT">Projects</NavLink>
             </NavItem>
             <NavItem>
               <NavLink href="/#">Contact</NavLink>

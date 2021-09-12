@@ -1,232 +1,134 @@
-import React, { Component } from "react";
-import "./form.css";
-class ContactForm extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: "",
-      nameError: false,
-      contact: "",
-      email: "",
-      emailError: false,
-      emailError2: false,
-      message: "",
-      messageError: false,
-      formValid: false,
-    };
+import React, { useState } from "react";
+import { Button, Col, Form, Row, InputGroup, Container } from "react-bootstrap";
+import "./form1.css";
+function Form1(props) {
+  const [validated, setValidated] = useState(false);
+  const [color, setColor] = useState(false);
 
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleBlur = this.handleBlur.bind(this);
-  }
-
-  isValidEmail(email) {
-    return /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test(email);
-  }
-
-  // isValidcontact(contactno) {
-  //   return /^[6-9]\d{9}$/.test(contactno);
-  // }
-
-  handleBlur(e) {
-    const name = e.target.name;
-    const value = e.target.value;
-
-    this.setState({ [name]: value });
-
-    if (value.length <= 0 && name == "name") {
-      this.setState({ nameError: true });
-    } else {
-      this.setState({ nameError: false });
+  const handleSubmit = (event) => {
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
     }
 
-    if (value.length <= 0 && name == "email") {
-      this.setState({ emailError: true });
-      this.setState({ emailError2: false });
-    } else {
-      this.setState({ emailError: false });
-      if (this.isValidEmail(value)) {
-        this.setState({ emailError2: false });
-      } else {
-        this.setState({ emailError2: true });
-      }
-    }
-  }
+    setValidated(true);
+  };
 
-  handleChange(e) {
-    this.setState({ [e.target.name]: e.target.value });
-  }
-
-  handleSubmit(e) {
-    const {
-      name,
-      email,
-      message,
-      nameError,
-      emailError,
-      emailError2,
-      messageError,
-    } = this.state;
-
-    this.setState({ nameError: name ? false : true });
-    this.setState({ messageError: message ? false : true });
-    this.setState({ emailError: email ? false : true });
-    if (email && !emailError) {
-      this.setState({ emailError2: this.isValidEmail(email) ? false : true });
-    }
-
-    if (
-      name &&
-      email &&
-      message &&
-      !nameError &&
-      !emailError &&
-      !emailError2 &&
-      !messageError
-    ) {
-      this.setState({ formValid: true });
-    } else {
-      this.setState({ formValid: false });
-    }
-
-    e.preventDefault();
-  }
-
-  render() {
-    const {
-      name,
-      email,
-      message,
-      nameError,
-      emailError,
-      emailError2,
-      messageError,
-      formValid,
-    } = this.state;
-
-    if (!formValid) {
-      return (
-        <>
-          <div className="card shadow-sm border-0 px-3 rounded-2 mb-3 py-4 mx-auto mt-5 bg-light">
-            <div className="card-header bg-transparent border-0 text-center text-uppercase">
-              <h3>{this.props.title}</h3>
+  return (
+    <Container fluid>
+      <div className="row">
+        <div className="bd-ex mt-5 col-sm-12 col-md-9 col-lg-7  col-xl-6 col-xxl-5">
+          <Row>
+            <div className="header-text mb-2 col-12">
+              <h1 className="display-5 text-center">Contact Me</h1>
             </div>
-            <div className="card-body">
-              <form
-                action="/"
-                onSubmit={(e) => this.handleSubmit(e)}
-                encType="multipart/form-data"
-                autoComplete="off"
-              >
-                <div className="form-group">
-                  <label className="mb-0">
-                    Your name<span className="text-danger">*</span>
-                  </label>
-                  <input
-                    name="name"
-                    type="text"
-                    className="form-control"
-                    placeholder="Name"
-                    value={this.state.name}
-                    onChange={this.handleChange}
-                    onBlur={this.handleBlur}
+          </Row>
+          <Row>
+            <Form noValidate validated={validated} onSubmit={handleSubmit}>
+              <Row className="mb-3">
+                <Form.Group controlId="validationCustom01">
+                  <Form.Label
+                    className="justify-content-start d-flex "
+                    as="legend"
+                  >
+                    Name
+                  </Form.Label>
+                  <InputGroup
+                    hasValidation
+                    onChange={(e) => console.log(e.target.value.length)}
+                    size="lg"
+                  >
+                    <InputGroup.Text id="inputGroupPrepend">
+                      <i class="bi bi-person-circle" />
+                    </InputGroup.Text>
+                    <Form.Control
+                      type="text"
+                      name="name"
+                      placeholder="Your Name "
+                      aria-describedby="inputGroupPrepend"
+                      required
+                      className="col-sm-12"
+                    />
+                    <Form.Control.Feedback type="invalid">
+                      <h5 style={{ fontSize: "1.5rem", fontweight: "bold" }}>
+                        Please type your name
+                      </h5>
+                    </Form.Control.Feedback>
+                  </InputGroup>
+                </Form.Group>
+              </Row>
+              <Row className="mb-3">
+                <Form.Group as={Col} md="12" controlId="validationCustom04">
+                  <Form.Label
+                    className="justify-content-start d-flex "
+                    as="legend"
+                  >
+                    Country
+                  </Form.Label>
+                  <Form.Select size="lg" required as="select">
+                    <option value="">Select country</option>
+                    <option>Finland</option>
+                    <option>Outside of Finland</option>
+                  </Form.Select>
+                  <Form.Control.Feedback type="invalid">
+                    <h5 style={{ fontSize: "1.5rem", fontweight: "bold" }}>
+                      Please provide a valid Country.
+                    </h5>
+                  </Form.Control.Feedback>
+                </Form.Group>
+              </Row>
+              <Row className="mb-3">
+                <Form.Group as={Col} md="12">
+                  <Form.Label
+                    className="justify-content-start d-flex "
+                    as="legend"
+                  >
+                    Message
+                  </Form.Label>
+                  <Form.Control
+                    as="textarea"
+                    style={{ height: "19vh" }}
+                    placeholder="Please Type Your Message "
+                    required
                   />
-                  {nameError ? (
-                    <div className="alert alert-danger mt-2">
-                      Name is a required field.
-                    </div>
-                  ) : (
-                    ""
-                  )}
-                </div>
-                <div className="form-group">
-                  <label className="mb-0">
-                    Your email<span className="text-danger">*</span>
-                  </label>
-                  <input
-                    name="email"
-                    type="email"
-                    className="form-control"
-                    placeholder="Email"
-                    value={this.state.email}
-                    onChange={this.handleChange}
-                    onBlur={this.handleBlur}
-                  />
-                  {emailError ? (
-                    <div className="alert alert-danger mt-2">
-                      Email is a required field.
-                    </div>
-                  ) : (
-                    ""
-                  )}
-                  {emailError2 ? (
-                    <div className="alert alert-danger mt-2">
-                      Email invalid.
-                    </div>
-                  ) : (
-                    ""
-                  )}
-                </div>
-                <div className="form-group">
-                  <label className="mb-0">Your contact number (Optional)</label>
-                  <input
-                    name="contact"
-                    type="text"
-                    className="form-control"
-                    placeholder="Contact"
-                    onChange={this.handleChange}
-                    value={this.state.contact}
-                  />
-                </div>
-                <div className="form-group">
-                  <label className="mb-0">
-                    Message<span className="text-danger">*</span>
-                  </label>
-                  <textarea
-                    name="message"
-                    type="text"
-                    className="form-control"
-                    placeholder="Message"
-                    value={this.state.message}
-                    onChange={this.handleChange}
-                    onBlur={this.handleBlur}
-                  />
-                  {messageError ? (
-                    <div className="alert alert-danger mt-2">
-                      Message is a required field.
-                    </div>
-                  ) : (
-                    ""
-                  )}
-                </div>
-                <p className="text-center mb-0">
-                  <input
-                    type="submit"
-                    className="btn btn-primary btn-lg w-100 text-uppercase"
-                    value="Submit Now"
-                  />
-                </p>
-              </form>
-            </div>
-          </div>
-        </>
-      );
-    } else {
-      return (
-        <div className="thankyou_details">
-          <div className="alert alert-success mt-3">
-            Thank for your message. We will contact you soon.
-          </div>
-          <ul className="list-group">
-            <li className="list-group-item">Name: {this.state.name}</li>
-            <li className="list-group-item">Email: {this.state.email}</li>
-            <li className="list-group-item">contact: {this.state.contact}</li>
-            <li className="list-group-item">Message: {this.state.message}</li>
-          </ul>
+                  <Form.Control.Feedback type="invalid">
+                    <h5 style={{ fontSize: "1.5rem", fontweight: "bold" }}>
+                      Please write a message.
+                    </h5>
+                  </Form.Control.Feedback>
+                </Form.Group>
+              </Row>
+              <div className="mb-5 mt-4">
+                <Form.Label as="legend" row sm={12}>
+                  Gender
+                </Form.Label>
+                <Form.Check
+                  inline
+                  label="Male"
+                  name="group1"
+                  type="radio"
+                  id={`inline-radio-1`}
+                  required
+                  style={{ fontSize: "1.5rem", fontweight: "bold" }}
+                />
+                <Form.Check
+                  inline
+                  label="Female"
+                  name="group1"
+                  type="radio"
+                  id={`inline-radio-1`}
+                  style={{ fontSize: "1.5rem", fontweight: "bold" }}
+                />
+              </div>
+
+              <Button type="submit">Send Message</Button>
+            </Form>
+          </Row>
         </div>
-      );
-    }
-  }
+      </div>
+    </Container>
+  );
 }
 
-export default ContactForm;
+export default Form1;

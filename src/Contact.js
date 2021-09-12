@@ -1,15 +1,14 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 import "./contact.css";
-import Form from "./Form";
+import Form1 from "./Form";
 
 function Contact(props) {
   return (
     <Container fluid>
       <Row>
         <div id="contact">
-          <h2 id="title">Contact</h2>
-          <Form />
+          <Form1 />
         </div>
       </Row>
     </Container>

@@ -12,7 +12,6 @@ function Project(props) {
       <Container>
         <div className="project-wrapper">
           <h2 className="project-title ">Projects</h2>
-
           <Row className="mb">
             <Col lg={4} sm={12}>
               <div className="project-wrapper__text">

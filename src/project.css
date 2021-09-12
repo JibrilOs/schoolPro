@@ -16,22 +16,44 @@
 #projects {
   background-color: white;
   color: (--dark-blue-text);
-  margin-top: 4rem;
+  margin-top: -10rem;
+  height: auto;
  }
 
 
   .project-title{
       color:(--dark-blue-text); 
-  margin-bottom: 4.5rem;
   font-size: var(--big-font-size);
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
+  padding-bottom: 50px;
+  
   }
    .project-wrapper {
-margin-bottom: 15rem;
 
+/* margin-top: -200px; */
 
    }
-   .mb{   margin-bottom: 8rem;
+   .mb{   margin-bottom: 5rem;
 text-align: justify;}
+
+@media only screen and (max-width: 973px) {
+#projects{
+ 
+}
+.mb{
+  margin-bottom: 2rem; 
+}
+ 
+}
+@media only screen and (max-width: 477px) {
+#projects{
+   margin-top: 300px;
+   margin-bottom: 290px;
+}
+.mb{
+  margin-bottom: 2rem; 
+}
+ 
+}
