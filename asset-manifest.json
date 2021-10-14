@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/schoolPro/static/css/main.9a7ce542.chunk.css",
+    "main.css": "/schoolPro/static/css/main.a3ab00cd.chunk.css",
     "main.js": "/schoolPro/static/js/main.c589ea45.chunk.js",
     "main.js.map": "/schoolPro/static/js/main.c589ea45.chunk.js.map",
     "runtime-main.js": "/schoolPro/static/js/runtime-main.1654f8a3.js",
@@ -10,7 +10,7 @@
     "static/js/2.842d4a4b.chunk.js.map": "/schoolPro/static/js/2.842d4a4b.chunk.js.map",
     "index.html": "/schoolPro/index.html",
     "static/css/2.818011ed.chunk.css.map": "/schoolPro/static/css/2.818011ed.chunk.css.map",
-    "static/css/main.9a7ce542.chunk.css.map": "/schoolPro/static/css/main.9a7ce542.chunk.css.map",
+    "static/css/main.a3ab00cd.chunk.css.map": "/schoolPro/static/css/main.a3ab00cd.chunk.css.map",
     "static/js/2.842d4a4b.chunk.js.LICENSE.txt": "/schoolPro/static/js/2.842d4a4b.chunk.js.LICENSE.txt",
     "static/media/banner1.e0b288a7.jpg": "/schoolPro/static/media/banner1.e0b288a7.jpg",
     "static/media/banner4.ef52519b.jpg": "/schoolPro/static/media/banner4.ef52519b.jpg",
@@ -23,7 +23,7 @@
     "static/js/runtime-main.1654f8a3.js",
     "static/css/2.818011ed.chunk.css",
     "static/js/2.842d4a4b.chunk.js",
-    "static/css/main.9a7ce542.chunk.css",
+    "static/css/main.a3ab00cd.chunk.css",
     "static/js/main.c589ea45.chunk.js"
   ]
 }
