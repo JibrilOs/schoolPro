@@ -5,7 +5,7 @@ import Form1 from "./Form";
 
 function Contact(props) {
   return (
-    <Container fluid>
+    <Container fluid id="contact-wrapper">
       <Row>
         <div id="contact">
           <Form1 />

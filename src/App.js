@@ -5,7 +5,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Homepage from "./Homepage";
 import About from "./About";
 import Project from "./Project";
-import Navb from "./Navbar";
+
 import Contact from "./Contact";
 import Footer from "./Footer";
 
@@ -19,11 +19,10 @@ import {
   NavLink,
 } from "reactstrap";
 import scrollToComponent from "react-scroll-to-component";
-import { Parallax, Background } from "react-parallax";
+import { Parallax } from "react-parallax";
 import Fade from "react-reveal/Fade";
 
 const styles = {
-  fontFamily: "sans-serif",
   textAlign: "center",
 };
 const insideStyles = {
@@ -66,7 +65,10 @@ class App extends Component {
     return (
       <div className="container-fluid">
         <Navbar color="dark" dark expand="md" className="fixed-top">
-          <NavbarBrand className="navbar-brand mb-0 h1 px-2  mx-1" href="/">
+          <NavbarBrand
+            className="navbar-brand mb-0 h1 px-2  mx-1 logo"
+            href="/#"
+          >
             {`< JOSDEV / >`}
           </NavbarBrand>
           <NavbarToggler onClick={this.toggleNav} />
@@ -158,9 +160,9 @@ class App extends Component {
           }}
         >
           <div style={styles}>
-            <Parallax bgImage={image5} strength={500}>
-              <div style={{ height: 1000 }}>
-                <div style={insideStyles}>
+            <Parallax bgImage={image5} strength={500} className="home__bg">
+              <div style={{ height: 1000 }} id="home">
+                <div style={insideStyles} className="home__wrapper">
                   <Homepage />
                 </div>
               </div>
@@ -175,9 +177,9 @@ class App extends Component {
           }}
         >
           <div style={styles}>
-            <Parallax bgImage={image2} strength={100}>
-              <div style={{ height: 1000 }}>
-                <div style={insideStyles}>
+            <Parallax bgImage={image2} strength={100} className="About_img">
+              <div style={{ height: 1000 }} id="about">
+                <div style={insideStyles} className="about__wrapper">
                   <About />
                 </div>
               </div>
@@ -193,8 +195,8 @@ class App extends Component {
         >
           <div style={styles}>
             <Parallax strength={200}>
-              <div style={{ height: 2300 }}>
-                <div style={insideStyles}>
+              <div style={{ height: 2000 }} id="projects-wrapper-parallax">
+                <div style={insideStyles} id="projects-positioner">
                   <Project />
                 </div>
               </div>
@@ -208,24 +210,7 @@ class App extends Component {
             this.Contact = section;
           }}
         >
-          <div style={styles}>
-            <Parallax bgImage={image4} strength={100}>
-              <div style={{ height: 970, width: "100%" }}>
-                <div
-                  style={{
-                    position: "absolute",
-                    top: "50%",
-                    left: "50%",
-                    transform: "translate(-50%,-50%)",
-
-                    width: "100%",
-                  }}
-                >
-                  <Contact />
-                </div>
-              </div>
-            </Parallax>
-          </div>
+          <Contact />
         </section>
         <Footer />
       </div>

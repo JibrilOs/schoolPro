@@ -1,4 +1,6 @@
 /*****effect animation start********/
+
+  
 .effect-wrap .effect {
   position: absolute;
   z-index: 1;
@@ -14,6 +16,7 @@
   bottom: 10%;
   animation: spin 10s linear infinite;
 }
+
 
 @keyframes spin {
   0% {
@@ -125,3 +128,51 @@ animation: spin 10s linear infinite;
 /*****effect-5 circular stripes animation  end********/
 
 /*****!effect animation end ********/
+/* media queries */
+@media screen  and (max-width:1400px){
+
+  .effect-3 {
+ 
+ 
+  left: 33%;
+  top: -16%;
+
+}
+
+}
+@media screen and (max-width:600px){
+
+  .effect-1{
+    right:1%;
+    margin-top: 2rem;
+  }
+.effect-2 {
+  left: 0;
+
+  bottom: 5%;
+
+}
+.effect-3 {
+ 
+ 
+  left: 33%;
+  top: -50px;
+
+}
+.effect-5{
+  
+    right: 1%;
+    top: 30%;
+
+}
+
+.effect-4 {
+ left: 20%;
+
+}
+.eff4{
+  margin-top: 3rem;
+  left: 1%;
+}
+
+}

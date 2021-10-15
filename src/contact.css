@@ -17,7 +17,9 @@
     135deg,
     var(--primary-color) 0%,
     var(--secondary-color) 100%
+  
   );
+ 
   -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
   padding: 15rem 0 10rem 0;
@@ -29,11 +31,13 @@ color:white;
 text-align: center;
  font-size: 2.4rem;
   }
-  @media only screen and (max-width: 1069px) {
+  @media  screen and (max-width: 1069px) {
 #contact {
   
    font-size: 1.6rem;
-   clip-path: none
+   clip-path: none;
+    height: auto;
+    
    
   }
  

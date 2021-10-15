@@ -1,1 +1,91 @@
 /* .cont{background-color: grey;} */
+.logo{
+    background-color: red;
+}
+
+@media screen and (max-width:603px){
+
+.Home .react-parallax-bgimage{
+ 
+    visibility: hidden;
+    
+    
+}
+#projects-wrapper-parallax{
+
+height: 1060px !important;
+
+}
+
+#home{
+    height: 800px!important;
+}
+.home__wrapper{
+   width: 99%!important; 
+    display: flex !important;
+    justify-content: center;
+    
+}
+.hero-title{
+    font-size: 1.2rem!important;
+    width: 99%;
+    text-align: center !important;
+}
+#about{
+
+    height: 1200px !important;
+    
+}
+.about__wrapper{
+    width: 100% !important;
+    margin-top: 10px;
+   
+}
+
+.info_text{
+ text-align: center;   
+ font-size: 1rem;
+}
+
+
+}
+
+
+
+@media screen and (max-width:991px) {
+   
+    #projects-wrapper-parallax{
+
+height: 2700px !important;
+
+}
+.project-wrapper__image{
+    margin-top: 1rem;
+}
+}
+@media screen and (max-width:700px) {
+    
+    #projects-wrapper-parallax{
+
+height: 2180px !important;
+
+}
+}
+@media screen and (max-width:500px){
+#projects-wrapper-parallax{
+
+height: 1900px !important;
+
+}
+#projects-positioner{
+  top: 0%!important;
+transform: translate(-50%, 10%)!important;
+
+}
+section.Contact{
+    margin-top: 6rem;
+}
+
+
+}
+

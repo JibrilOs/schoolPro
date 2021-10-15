@@ -21,19 +21,7 @@ import {
 import "./navb.css";
 
 const Navb = (props) => {
-  const styles = {
-    fontFamily: "sans-serif",
-    textAlign: "center",
-  };
-  const insideStyles = {
-    padding: 20,
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%,-50%)",
-    // height: auto,
-    width: 1300,
-  };
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -41,7 +29,7 @@ const Navb = (props) => {
   return (
     <Container fluid>
       <Navbar color="dark" dark expand="md" className="fixed-top">
-        <NavbarBrand href="/" className=" navbar-brand mb-0 h1 px-2 logo1">
+        <NavbarBrand href="/#" className=" navbar-brand mb-0 h1 px-2 logo1">
           JOSDEV
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />

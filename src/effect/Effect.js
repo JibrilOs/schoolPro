@@ -20,7 +20,7 @@ function Effect() {
       <div className="effect effect-3"></div>
       <div className="effect effect-4"></div>
       <div
-        className="effect effect-4"
+        className="effect effect-4 eff4"
         style={{
           top: "100px",
           animation:
