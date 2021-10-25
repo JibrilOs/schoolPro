@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/schoolPro/static/css/main.648850f1.chunk.css",
-    "main.js": "/schoolPro/static/js/main.c6689335.chunk.js",
-    "main.js.map": "/schoolPro/static/js/main.c6689335.chunk.js.map",
-    "runtime-main.js": "/schoolPro/static/js/runtime-main.1654f8a3.js",
-    "runtime-main.js.map": "/schoolPro/static/js/runtime-main.1654f8a3.js.map",
-    "static/css/2.818011ed.chunk.css": "/schoolPro/static/css/2.818011ed.chunk.css",
-    "static/js/2.50fb5152.chunk.js": "/schoolPro/static/js/2.50fb5152.chunk.js",
-    "static/js/2.50fb5152.chunk.js.map": "/schoolPro/static/js/2.50fb5152.chunk.js.map",
+    "main.js": "/schoolPro/static/js/main.8503dc25.chunk.js",
+    "main.js.map": "/schoolPro/static/js/main.8503dc25.chunk.js.map",
+    "runtime-main.js": "/schoolPro/static/js/runtime-main.c73ab95e.js",
+    "runtime-main.js.map": "/schoolPro/static/js/runtime-main.c73ab95e.js.map",
+    "static/css/2.0a9ec390.chunk.css": "/schoolPro/static/css/2.0a9ec390.chunk.css",
+    "static/js/2.d44003af.chunk.js": "/schoolPro/static/js/2.d44003af.chunk.js",
+    "static/js/2.d44003af.chunk.js.map": "/schoolPro/static/js/2.d44003af.chunk.js.map",
     "index.html": "/schoolPro/index.html",
-    "static/css/2.818011ed.chunk.css.map": "/schoolPro/static/css/2.818011ed.chunk.css.map",
+    "static/css/2.0a9ec390.chunk.css.map": "/schoolPro/static/css/2.0a9ec390.chunk.css.map",
     "static/css/main.648850f1.chunk.css.map": "/schoolPro/static/css/main.648850f1.chunk.css.map",
-    "static/js/2.50fb5152.chunk.js.LICENSE.txt": "/schoolPro/static/js/2.50fb5152.chunk.js.LICENSE.txt",
+    "static/js/2.d44003af.chunk.js.LICENSE.txt": "/schoolPro/static/js/2.d44003af.chunk.js.LICENSE.txt",
     "static/media/banner1.e0b288a7.jpg": "/schoolPro/static/media/banner1.e0b288a7.jpg",
     "static/media/banner4.ef52519b.jpg": "/schoolPro/static/media/banner4.ef52519b.jpg",
     "static/media/banner5.8d472284.png": "/schoolPro/static/media/banner5.8d472284.png",
@@ -20,10 +20,10 @@
     "static/media/profile.d2fa9747.jpg": "/schoolPro/static/media/profile.d2fa9747.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1654f8a3.js",
-    "static/css/2.818011ed.chunk.css",
-    "static/js/2.50fb5152.chunk.js",
+    "static/js/runtime-main.c73ab95e.js",
+    "static/css/2.0a9ec390.chunk.css",
+    "static/js/2.d44003af.chunk.js",
     "static/css/main.648850f1.chunk.css",
-    "static/js/main.c6689335.chunk.js"
+    "static/js/main.8503dc25.chunk.js"
   ]
 }
