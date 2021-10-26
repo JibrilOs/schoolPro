@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/schoolPro/static/css/main.648850f1.chunk.css",
-    "main.js": "/schoolPro/static/js/main.8503dc25.chunk.js",
-    "main.js.map": "/schoolPro/static/js/main.8503dc25.chunk.js.map",
+    "main.js": "/schoolPro/static/js/main.cb646fa2.chunk.js",
+    "main.js.map": "/schoolPro/static/js/main.cb646fa2.chunk.js.map",
     "runtime-main.js": "/schoolPro/static/js/runtime-main.c73ab95e.js",
     "runtime-main.js.map": "/schoolPro/static/js/runtime-main.c73ab95e.js.map",
     "static/css/2.0a9ec390.chunk.css": "/schoolPro/static/css/2.0a9ec390.chunk.css",
@@ -24,6 +24,6 @@
     "static/css/2.0a9ec390.chunk.css",
     "static/js/2.d44003af.chunk.js",
     "static/css/main.648850f1.chunk.css",
-    "static/js/main.8503dc25.chunk.js"
+    "static/js/main.cb646fa2.chunk.js"
   ]
 }
